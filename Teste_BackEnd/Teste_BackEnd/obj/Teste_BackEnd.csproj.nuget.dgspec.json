@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pssimeao\\source\\repos\\Teste_BackEnd\\Teste_BackEnd\\Teste_BackEnd.csproj": {}
+    "C:\\Users\\pssimeao\\Desktop\\Api_c-\\Teste_BackEnd\\Teste_BackEnd\\Teste_BackEnd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pssimeao\\source\\repos\\Teste_BackEnd\\Teste_BackEnd\\Teste_BackEnd.csproj": {
+    "C:\\Users\\pssimeao\\Desktop\\Api_c-\\Teste_BackEnd\\Teste_BackEnd\\Teste_BackEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pssimeao\\source\\repos\\Teste_BackEnd\\Teste_BackEnd\\Teste_BackEnd.csproj",
+        "projectUniqueName": "C:\\Users\\pssimeao\\Desktop\\Api_c-\\Teste_BackEnd\\Teste_BackEnd\\Teste_BackEnd.csproj",
         "projectName": "Teste_BackEnd",
-        "projectPath": "C:\\Users\\pssimeao\\source\\repos\\Teste_BackEnd\\Teste_BackEnd\\Teste_BackEnd.csproj",
+        "projectPath": "C:\\Users\\pssimeao\\Desktop\\Api_c-\\Teste_BackEnd\\Teste_BackEnd\\Teste_BackEnd.csproj",
         "packagesPath": "C:\\Users\\pssimeao\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pssimeao\\source\\repos\\Teste_BackEnd\\Teste_BackEnd\\obj\\",
+        "outputPath": "C:\\Users\\pssimeao\\Desktop\\Api_c-\\Teste_BackEnd\\Teste_BackEnd\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

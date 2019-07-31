@@ -11,7 +11,7 @@ namespace Teste_BackEnd.DAL
 
         void set(T model);
 
-        void change();
+        void change(T model);
 
         void delete(int id);
 

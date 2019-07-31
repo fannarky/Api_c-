@@ -56,7 +56,7 @@ namespace Teste_BackEnd.Database
 
         public void OpenConnection()
         {
-            if(this.connection.State == System.Data.ConnectionState.Closed)
+            if(this.connection.State == ConnectionState.Closed)
             {
                 this.connection.Open();
             }

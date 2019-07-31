@@ -19,11 +19,15 @@ namespace Teste_BackEnd.DAL
             databaseHelper = DatabaseHelper.Create();
         }
 
-        public void change()
+        public void change(Usuario user)
         {
             var paramts = new SqlParameter[]
             {
-                new SqlParameter("P_1", "valor do parametro (variavel)")
+                new SqlParameter("@P_ID", user.id),
+                new SqlParameter("@P_NAME", user.name),
+                new SqlParameter("@P_EMAIL", user.email),
+                new SqlParameter("@P_PASSWORD", user.password),
+                new SqlParameter("@P_PHONE", user.phone)
             };
 
             this.databaseHelper.ExecuteNonQuery("Query a ser executada", paramts);
@@ -33,7 +37,7 @@ namespace Teste_BackEnd.DAL
         {
             var paramts = new SqlParameter[]
             {
-                new SqlParameter("P_ID", id)
+                new SqlParameter("@P_ID", id)
             };
 
             this.databaseHelper.ExecuteNonQuery("Query a ser executada", paramts);
