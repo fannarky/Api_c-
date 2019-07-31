@@ -1,0 +1,13 @@
+C:\Users\pssimeao\source\repos\Teste_BackEnd\Teste_BackEnd\bin\Debug\netcoreapp2.1\Teste_BackEnd.deps.json
+C:\Users\pssimeao\source\repos\Teste_BackEnd\Teste_BackEnd\bin\Debug\netcoreapp2.1\Teste_BackEnd.runtimeconfig.json
+C:\Users\pssimeao\source\repos\Teste_BackEnd\Teste_BackEnd\bin\Debug\netcoreapp2.1\Teste_BackEnd.runtimeconfig.dev.json
+C:\Users\pssimeao\source\repos\Teste_BackEnd\Teste_BackEnd\bin\Debug\netcoreapp2.1\Teste_BackEnd.dll
+C:\Users\pssimeao\source\repos\Teste_BackEnd\Teste_BackEnd\obj\Debug\netcoreapp2.1\Teste_BackEnd.csproj.CoreCompileInputs.cache
+C:\Users\pssimeao\source\repos\Teste_BackEnd\Teste_BackEnd\obj\Debug\netcoreapp2.1\Teste_BackEnd.RazorAssemblyInfo.cache
+C:\Users\pssimeao\source\repos\Teste_BackEnd\Teste_BackEnd\obj\Debug\netcoreapp2.1\Teste_BackEnd.RazorAssemblyInfo.cs
+C:\Users\pssimeao\source\repos\Teste_BackEnd\Teste_BackEnd\obj\Debug\netcoreapp2.1\Teste_BackEnd.AssemblyInfoInputs.cache
+C:\Users\pssimeao\source\repos\Teste_BackEnd\Teste_BackEnd\obj\Debug\netcoreapp2.1\Teste_BackEnd.AssemblyInfo.cs
+C:\Users\pssimeao\source\repos\Teste_BackEnd\Teste_BackEnd\obj\Debug\netcoreapp2.1\Teste_BackEnd.RazorTargetAssemblyInfo.cache
+C:\Users\pssimeao\source\repos\Teste_BackEnd\Teste_BackEnd\bin\Debug\netcoreapp2.1\Teste_BackEnd.pdb
+C:\Users\pssimeao\source\repos\Teste_BackEnd\Teste_BackEnd\obj\Debug\netcoreapp2.1\Teste_BackEnd.dll
+C:\Users\pssimeao\source\repos\Teste_BackEnd\Teste_BackEnd\obj\Debug\netcoreapp2.1\Teste_BackEnd.pdb
