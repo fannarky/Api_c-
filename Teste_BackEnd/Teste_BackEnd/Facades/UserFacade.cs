@@ -1,7 +1,5 @@
-﻿using System;
+﻿
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Teste_BackEnd.Model;
 
 namespace Teste_BackEnd.Facades
@@ -23,9 +21,9 @@ namespace Teste_BackEnd.Facades
             return this._userDAL.getByPk(id);
         }
 
-        public void changeUser()
+        public void changeUser(Usuario user)
         {
-            this._userDAL.change();
+            this._userDAL.change(user);
         }
 
         public void deleteUser(int id)

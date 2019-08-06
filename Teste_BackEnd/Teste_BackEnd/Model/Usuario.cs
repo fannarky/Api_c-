@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Teste_BackEnd.Model
+﻿namespace Teste_BackEnd.Model
 {
     public class Usuario
     {

@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Teste_BackEnd.Database
 {
@@ -42,18 +40,19 @@ namespace Teste_BackEnd.Database
 
         #endregion
 
+        #region static methods
+        //public static DatabaseHelper Create()
+        //{
+        //    return new DatabaseHelper();  
+        //}
+        //
+        //public static DatabaseHelper Create(string connection)
+        //{
+        //    return new DatabaseHelper(connection);
+        //}
+        #endregion
+
         #region public methods
-
-        public static DatabaseHelper Create()
-        {
-            return new DatabaseHelper();
-        }
-
-        public static DatabaseHelper Create(string connection)
-        {
-            return new DatabaseHelper(connection);
-        }
-
         public void OpenConnection()
         {
             if(this.connection.State == ConnectionState.Closed)
@@ -67,6 +66,7 @@ namespace Teste_BackEnd.Database
             this.connection.Close();
         }
 
+        #region Criação de parametros de entrada e saida
         public SqlParameter BuildParameter(string nome, object valor,
          DbType tipo, int size)
         {
@@ -97,7 +97,7 @@ namespace Teste_BackEnd.Database
             SqlParameter parameter = this.BuildOutPutParameter(name, type, size);
             listParametros.Add(parameter);
         }
-
+        #endregion
         public void ExecuteNonQuery(SqlCommand command)
         {
             try
@@ -184,6 +184,7 @@ namespace Teste_BackEnd.Database
             }
         }
         
+
         public void ExecuteCommands(params SqlCommand[] commands)
         {
             Exception erro = null;

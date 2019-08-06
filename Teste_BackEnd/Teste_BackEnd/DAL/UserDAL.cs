@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Threading.Tasks;
 using Teste_BackEnd.Database;
+using Teste_BackEnd.Factory;
 using Teste_BackEnd.Model;
 
 namespace Teste_BackEnd.DAL
@@ -16,18 +14,21 @@ namespace Teste_BackEnd.DAL
 
         public UserDAL()
         {
-            databaseHelper = DatabaseHelper.Create();
+            databaseHelper = DatabaseFactory.GetDatabase();
         }
 
         public void change(Usuario user)
         {
             var paramts = new SqlParameter[]
             {
-                new SqlParameter("@P_ID", user.id),
-                new SqlParameter("@P_NAME", user.name),
-                new SqlParameter("@P_EMAIL", user.email),
-                new SqlParameter("@P_PASSWORD", user.password),
-                new SqlParameter("@P_PHONE", user.phone)
+                new SqlParameter("@P_ID", user.idFuncionario),
+                new SqlParameter("@P_NAME", user.nmFuncionario),
+                new SqlParameter("@P_EMAIL", user.nmEmail),
+                new SqlParameter("@P_PASSWORD", user.nmSenha),
+                new SqlParameter("@P_PHONE", user.nrTelefone),
+                new SqlParameter("@P_CONTRACTOR", user.idEmpresa),
+                new SqlParameter("@P_IDGESTOR", user.idGestor),
+                new SqlParameter("@P_TYPE_FUNC", user.idTipo)
             };
 
             this.databaseHelper.ExecuteNonQuery("Query a ser executada", paramts);
@@ -55,10 +56,15 @@ namespace Teste_BackEnd.DAL
                 reader = databaseHelper.ExecuteDataReader(query);
                 while (reader.Read())
                 {
-                    user.id = reader.GetInt32(0);
-                    user.name = reader.GetString(1);
-                    user.email = reader.GetString(2);
-                    user.phone = reader.GetString(3);
+                    user.idFuncionario = reader.GetInt32(0);
+                    user.nmFuncionario= reader.GetString(1);
+                    user.nmEmail = reader.GetString(2);
+                    user.nrTelefone = reader.GetString(3);
+                    user.nmSenha = reader.GetString(4);
+                    user.idEmpresa = reader.GetInt16(5);
+                    user.idGestor = reader.GetInt16(6);
+                    user.idTipo = reader.GetInt16(7);
+
                     list.Add(user);
                 }
                 reader.Close();
@@ -84,10 +90,14 @@ namespace Teste_BackEnd.DAL
                     new SqlParameter("@id", id));
                 if (reader.Read())
                 {
-                    user.id = reader.GetInt32(0);
-                    user.name = reader.GetString(1);
-                    user.email = reader.GetString(2);
-                    user.phone = reader.GetString(3);
+                    user.idFuncionario = reader.GetInt32(0);
+                    user.nmFuncionario= reader.GetString(1);
+                    user.nmEmail = reader.GetString(2);
+                    user.nrTelefone = reader.GetString(3);
+                    user.nmSenha = reader.GetString(4);
+                    user.idEmpresa = reader.GetInt16(5);
+                    user.idGestor = reader.GetInt16(6);
+                    user.idTipo = reader.GetInt16(7);
                 }
                 reader.Close();
                 this.databaseHelper.CloseConnection();
@@ -113,15 +123,18 @@ namespace Teste_BackEnd.DAL
             //Lista de parametros
             var paramts = new SqlParameter[]
             {
-                new SqlParameter("@P_ID", person.id),
-                new SqlParameter("@P_NAME", person.name),
-                new SqlParameter("@P_EMAIL", person.email),
-                new SqlParameter("@P_PHONE", person.phone)
+                new SqlParameter("@P_ID", person.idFuncionario),
+                new SqlParameter("@P_NAME", person.nmFuncionario),
+                new SqlParameter("@P_EMAIL", person.nmEmail),
+                new SqlParameter("@P_PASSWORD", person.nmSenha),
+                new SqlParameter("@P_PHONE", person.nrTelefone),
+                new SqlParameter("@P_CONTRACTOR", person.idEmpresa),
+                new SqlParameter("@P_IDGESTOR", person.idGestor),
+                new SqlParameter("@P_TYPE_FUNC", person.idTipo)
             };
 
             this.databaseHelper.ExecuteNonQuery("Query a ser executada", paramts);
 
-            throw new NotImplementedException();
         }
     }
 }
