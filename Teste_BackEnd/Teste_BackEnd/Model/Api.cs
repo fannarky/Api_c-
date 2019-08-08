@@ -5,10 +5,8 @@ using System.Threading.Tasks;
 
 namespace Teste_BackEnd.Model
 {
-    public class MessageCollection<T> where T : class
+    public class Api
     {
-        public string message { get; set; }
 
-        public T model { get; set; }
     }
 }

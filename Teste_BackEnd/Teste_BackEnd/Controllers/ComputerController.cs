@@ -7,6 +7,7 @@ namespace Teste_BackEnd.Controllers
 {
 
     [Route("api/[controller]")]
+    [ApiController]
     public class ComputerController : ControllerBase
     {
         [HttpGet]
